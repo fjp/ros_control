@@ -2,6 +2,27 @@
 Changelog for package rqt_controller_manager
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.18.2 (2020-08-17)
+-------------------
+* Use an explicit relative import path instead of implicit. (`#471 <https://github.com/ros-controls/ros_control/issues/471>`_)
+  On python3 system the implicit relative import will not work. The explicit
+  notation, however, should work on python >= 2.5
+* Contributors: Felix Exner
+
+0.18.1 (2020-05-09)
+-------------------
+* Fix rqt displaying and handling of 'initialized' controllers (`#450 <https://github.com/ros-controls/ros_control/issues/450>`_)
+  This changes two minor behaviors:
+  - Now shows 'initialized' controllers as red again
+  - Now shows context menus for initialized controllers
+  Fixes `ros-controls/ros_control#445 <https://github.com/ros-controls/ros_control/issues/445>`_
+* Contributors: RobertWilbrandt
+
+0.18.0 (2020-04-16)
+-------------------
+* Bump CMake version to avoid CMP0048 (`#427 <https://github.com/ros-controls/ros_control/issues/427>`_)
+* Contributors: Shane Loretz
+
 0.17.0 (2020-02-24)
 -------------------
 * added missing controller state: 'initialised'

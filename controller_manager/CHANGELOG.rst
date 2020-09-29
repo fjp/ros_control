@@ -2,6 +2,31 @@
 Changelog for package controller_manager
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.18.2 (2020-08-17)
+-------------------
+
+0.18.1 (2020-05-09)
+-------------------
+* Add function specifiers and modernize constructors (`#430 <https://github.com/ros-controls/ros_control/issues/430>`_)
+  * Add override specifiers & default constructors
+  * Delete ControllerBase copy & move ctors
+  * Remove unnecessary default constructors
+  * Modernize additional constructors
+  * Revert ImuSensorHandle::Data::Data() = default
+  * Remove unnecessary default overridden constructors
+  * Remove semicolon after function body
+* Contributors: Matt Reynolds
+
+0.18.0 (2020-04-16)
+-------------------
+* enable spawner to wait indefinitely if requested (`#428 <https://github.com/ros-controls/ros_control/issues/428>`_)
+  `rospy.wait_for_service` does not allow for `0` to wait indefinitely.
+  Instead, `None` has to be passed explicitly.
+  By personal request of three maintainers extended to include documentation
+  and the alternative argument --no-timeout.
+* Bump CMake version to avoid CMP0048 (`#427 <https://github.com/ros-controls/ros_control/issues/427>`_)
+* Contributors: Michael Görner, Shane Loretz
+
 0.17.0 (2020-02-24)
 -------------------
 * Use auto keyword
